@@ -4,6 +4,13 @@ const index = (req, res) => {
     });
 };
 
+const travel = (req, res) => {
+    res.render('travlr', {
+        title: 'Travlr Getaways'
+    });
+};
+
 module.exports = {
-    index
+    index,
+    travel
 };
