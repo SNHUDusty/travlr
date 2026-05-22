@@ -1,3 +1,5 @@
+const trips = require('../data/trips.json');
+
 const index = (req, res) => {
     res.render('index', {
         title: 'Travlr Getaways'
@@ -6,7 +8,8 @@ const index = (req, res) => {
 
 const travel = (req, res) => {
     res.render('travlr', {
-        title: 'Travlr Getaways'
+        title: 'Travlr Getaways',
+        trips
     });
 };
 

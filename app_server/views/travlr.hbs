@@ -1,19 +1,23 @@
 {{> header}}
 
 <main>
-    <h2>{{message}}</h2>
-
     <section>
-        <h3>Featured Travel Packages</h3>
+        <h2>Travel</h2>
 
-        {{#each packages}}
-        <div>
-            <h4>{{name}}</h4>
+        {{#each trips}}
+        <article>
+            <h3>{{name}}</h3>
+
+            {{#if image}}
+            <img src="/images/{{image}}" alt="{{name}}" style="max-width: 300px;">
+            {{/if}}
+
             <p>{{description}}</p>
-            <p>Starting at {{price}}</p>
-        </div>
+            <p><strong>Length:</strong> {{length}}</p>
+            <p><strong>Resort:</strong> {{resort}}</p>
+            <p><strong>Per Person:</strong> {{perPerson}}</p>
+        </article>
         {{/each}}
-
     </section>
 </main>
 
