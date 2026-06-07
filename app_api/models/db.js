@@ -16,4 +16,6 @@ mongoose.connection.on('disconnected', () => {
     console.log('Mongoose disconnected');
 });
 
+require('./travlr');
+
 module.exports = mongoose;

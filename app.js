@@ -6,13 +6,13 @@ var logger = require('morgan');
 var hbs = require('hbs');
 
 require('./app_api/models/db');
-require('./app_api/models/travlr');
 
 var indexRouter = require('./app_server/routes/index');
 var usersRouter = require('./routes/users');
 var apiRouter = require('./app_api/routes/index');
 
 var app = express();
+
 hbs.registerPartials(path.join(__dirname, 'app_server', 'views', 'partials'));
 
 // view engine setup
