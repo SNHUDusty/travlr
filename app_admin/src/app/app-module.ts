@@ -7,20 +7,12 @@ import { AppRoutingModule } from './app-routing-module';
 import { App } from './app';
 import { TripList } from './trip-list/trip-list';
 import { TripCard } from './trip-card/trip-card';
+import { Login } from './login/login';
 
 @NgModule({
-  declarations: [
-    App,
-    TripList,
-    TripCard
-  ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule,
-    HttpClientModule,
-    FormsModule
-  ],
+  declarations: [App, TripList, TripCard, Login],
+  imports: [BrowserModule, AppRoutingModule, HttpClientModule, FormsModule],
   providers: [],
-  bootstrap: [App]
+  bootstrap: [App],
 })
-export class AppModule { }
+export class AppModule {}
